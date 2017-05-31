@@ -29,7 +29,7 @@ RUN wget https://github.com/google/fonts/archive/master.zip -O /fonts/master.zip
     unzip master.zip && \
     mkdir -p "/usr/share/fonts/truetype/google-fonts/" && \
     find /fonts/ -name "*.ttf" -exec install -m644 {} /usr/share/fonts/truetype/google-fonts/ \; || return 1 && \
-    fc-cache -f -v && \
+    fc-cache -f -v
 
 WORKDIR /
 
