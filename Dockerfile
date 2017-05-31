@@ -7,6 +7,8 @@ RUN apt-get update && \
     unzip \
     make \
     git \
+    pandoc \
+    pandoc-citeproc \
     ca-certificates \
     lmodern \
     texlive-latex-base \
