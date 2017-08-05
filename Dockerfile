@@ -36,3 +36,8 @@ RUN wget https://github.com/google/fonts/archive/master.zip -O /fonts/master.zip
 WORKDIR /
 
 RUN rm -rf /fonts
+
+# Add a task runner
+RUN wget https://github.com/go-task/task/releases/download/v1.3.1/task_1.3.1_linux_x64.tar.gz && \
+    tar xzf task_1.3.1_linux_x64.tar.gz && \
+    mv task /usr/local/bin/task
